@@ -19,8 +19,8 @@ echo "alias sourbashrc='source ~/.bashrc'" >> ~/.bashrc
 
 # gist 
 echo "alias sourgist='source <(curl -s -L $url_winston)'" >> ~/.bashrc
-
-
 source ~/.bashrc
 
 
+# apt
+sudo apt install -y curl
