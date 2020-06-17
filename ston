@@ -45,10 +45,13 @@ proxy_dis() {
     # $porxyIP:$portHttp
     # $porxyIP:$portSocks
     echo ""
+    echo ""
     echo "------- ------- ------- proxy"
     echo "https_proxy =$https_proxy"
     echo "http_proxy  =$http_proxy"
     echo "all_proxy   =$all_proxy"
+    echo ""
+    echo ""
 }
 
 
