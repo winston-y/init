@@ -9,6 +9,8 @@ url_tail_winPackage="a698fc8516fea7bd8d3c5c4dce835728/raw/d150989d0db7c124477d77
 
 
 
+https://git.io/Jf5x0
+
 echo $url_winston
 # echo "alias xxx=''" >> ~/.bashrc
 
@@ -18,7 +20,7 @@ echo "alias sourbashrc='source ~/.bashrc'" >> ~/.bashrc
 
 
 # gist 
-echo "alias sourgist='source <(curl -s -L $url_winston)'" >> ~/.bashrc
+echo "alias sourgist='source <(curl -s -L https://git.io/Jf5x0)'" >> ~/.bashrc
 source ~/.bashrc
 
 
