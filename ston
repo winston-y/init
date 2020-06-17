@@ -60,7 +60,11 @@ proxy_dis() {
 
 
 ipa() {
+    echo ""
+    echo ""
     ip a | grep "inet "
+    echo ""
+    echo ""
 }
 
 pbd() {
