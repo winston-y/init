@@ -10,7 +10,7 @@ alias md='mkdir -p'
 
 # function 
 
-test() {
+testgist() {
     echo "1234"
 }
 
