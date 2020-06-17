@@ -10,6 +10,11 @@ alias md='mkdir -p'
 
 # function 
 
+test() {
+    echo "1234"
+}
+
+
 pbd() {
     ping baidu.com -c 5
 }
