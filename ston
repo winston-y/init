@@ -19,9 +19,9 @@ alias md='mkdir -p'
 # proxy
 
 proxy_set() {
-    proxyIP="127.0.0.1"
-    portHttp="7890"
-    portSocks="7891"
+    proxyIP=$1
+    portHttp=$2
+    portSocks=$3
     # $porxyIP:$portHttp
     # $porxyIP:$portSocks
     export https_proxy=http://$porxyIP:$portHttp http_proxy=http://$porxyIP:$portHttp all_proxy=socks5://$porxyIP:$portSocks
