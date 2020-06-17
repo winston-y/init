@@ -7,6 +7,42 @@ alias ls='ls -G'
 alias lsa='ls -lah'
 alias md='mkdir -p'
 
+# proxy
+
+proxy_set() {
+    proxyIP="127.0.0.1"
+    portHttp="7890"
+    portSocks="7891"
+    # $porxyIP:$portHttp
+    # $porxyIP:$portSocks
+    export https_proxy=http://$porxyIP:$portHttp http_proxy=http://$porxyIP:$portHttp all_proxy=socks5://$porxyIP:$portSocks
+
+}
+
+proxy_unset() {
+    proxyIP=""
+    portHttp=""
+    portSocks=""
+    # $porxyIP:$portHttp
+    # $porxyIP:$portSocks
+    export https_proxy=http://$porxyIP:$portHttp http_proxy=http://$porxyIP:$portHttp all_proxy=socks5://$porxyIP:$portSocks
+
+}
+
+proxy_dis() {
+    proxyIP=""
+    portHttp=""
+    portSocks=""
+    # $porxyIP:$portHttp
+    # $porxyIP:$portSocks
+    echo ""
+    echo "------- ------- ------- proxy"
+    echo "https_proxy =$https_proxy"
+    echo "http_proxy  =$http_proxy"
+    echo "all_proxy   =$all_proxy"
+}
+
+
 
 # function 
 
