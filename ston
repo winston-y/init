@@ -1,0 +1,23 @@
+# alias 
+
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -G'
+alias lsa='ls -lah'
+alias md='mkdir -p'
+
+
+# function
+
+pbd() {
+    ping baidu.com -c 5
+}
+
+pp() {
+    ping 192.168.1.$1 -c 5
+}
+
+p() {
+    ping $1 -c 5
+}
