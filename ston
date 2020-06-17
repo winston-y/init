@@ -1,4 +1,10 @@
-# alias 
+# first
+
+testgist() {
+    echo "1234"
+}
+
+# alias
 
 alias l='ls -lah'
 alias la='ls -lAh'
@@ -46,10 +52,10 @@ proxy_dis() {
 
 # function 
 
-testgist() {
-    echo "1234"
-}
 
+ipa() {
+    ip a | grep "inet "
+}
 
 pbd() {
     ping baidu.com -c 5
