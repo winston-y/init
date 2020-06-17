@@ -1,5 +1,10 @@
 # init
 
+### 
+```bash
+gisturl="Jf5h1"
+```
+
 # bash shell
 
 ```bash
