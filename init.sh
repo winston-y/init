@@ -19,8 +19,14 @@ echo "alias vibashrc='vi ~/.bashrc'" >> ~/.bashrc
 echo "alias sourbashrc='source ~/.bashrc'" >> ~/.bashrc
 
 
-# gist 
-echo "alias sourgist='source <(curl -s -L https://git.io/Jf5x0)'" >> ~/.bashrc
+# source my bash profile 
+
+cat >> ~/.bashrc <<EOF
+sourcegist() {
+    source <(curl -s -L https://git.io/Jf5x0)
+}
+EOF
+
 source ~/.bashrc
 
 
