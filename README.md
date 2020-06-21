@@ -1,6 +1,7 @@
 # init
 ## [Welcome to the world of technology](https://git.io/JfN8g)
 
+https://git.io/JfN8y
 
 ### short url
 ```bash
