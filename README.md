@@ -1,5 +1,5 @@
 # init
-## [welcome to world](https://git.io/vnz3U)
+## [welcome to world](https://git.io/JfNC0)
 
 
 ### short url
