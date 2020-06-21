@@ -1,0 +1,4 @@
+
+cd ~
+function Pro {vim $PROFILE}
+
