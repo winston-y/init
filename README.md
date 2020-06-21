@@ -1,5 +1,59 @@
 # init
 
+### short url
+```bash
+gisturl="Jf5h1"
+```
+
+### bash shell init
+
+```bash
+# echo "alias xxx=''" >> ~/.bashrc
+
+echo "alias vibashrc='vi ~/.bashrc'" >> ~/.bashrc
+echo "alias sourbashrc='source ~/.bashrc'" >> ~/.bashrc
+
+
+cat >> ~/.bashrc <<EOF
+sourcegist() {
+    source <(curl -s -L https://git.io/Jf5x0)
+}
+EOF
+
+
+source ~/.bashrc
+```
+
+### PowherShell init
+
+
+echo "" >> $PROFILE
+
+```powershell
+echo "function pro {code $PROFILE}" >> $PROFILE
+echo "function .pro {. $PROFILE}" >> $PROFILE
+echo "function .progit {. http://xxxx}" >> $PROFILE
+echo "" >> $PROFILE
+
+```
+
+# WSL (適用於 Linux 的 Windows 子系統)
+
+[手动安装WSL](https://docs.microsoft.com/zh-cn/windows/wsl/install-manual)（Microsoft Store）
+https://wsldownload.azureedge.net/kali-linux-08-06-2019.appx
+https://wsldownload.azureedge.net/DebianGNULinux_1-1-3-0_x64__76v4gfsz19hv4.Appx
+
+```powershell
+Add-AppxPackage .\kali-linux-08-06-2019.appx
+```
+
+### 使用 PowerShell 下載
+```powershell
+Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
+```
+
+curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
+
 # DNS
 
 | 国家 |                   | IPv4           | time (ms) |      |
@@ -31,29 +85,6 @@ Timezone:   Asia/Shanghai
 
 
 
-### 
-```bash
-gisturl="Jf5h1"
-```
-
-# bash shell
-
-```bash
-# echo "alias xxx=''" >> ~/.bashrc
-
-echo "alias vibashrc='vi ~/.bashrc'" >> ~/.bashrc
-echo "alias sourbashrc='source ~/.bashrc'" >> ~/.bashrc
-
-
-cat >> ~/.bashrc <<EOF
-sourcegist() {
-    source <(curl -s -L https://git.io/Jf5x0)
-}
-EOF
-
-
-source ~/.bashrc
-```
 
 # choco install
 
