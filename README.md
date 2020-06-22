@@ -1,7 +1,7 @@
 # init
-
+```cmd
 choco install -y 7zip vim nextcloud-client typora
-
+```
 
 [win + r]
 slmgr.vbs /dlv
