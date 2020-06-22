@@ -1,4 +1,15 @@
 # init
+
+choco install -y 7zip vim nextcloud-client typora
+
+
+[win + r]
+slmgr.vbs /dlv
+
+
+```cmd
+wmic os get caption
+```
 ## [Welcome to the world of technology](https://git.io/JfN8g)
 
 https://git.io/JfN8y
