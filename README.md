@@ -96,7 +96,9 @@ Timezone:   Asia/Shanghai
 | 202.120.2.101 | ntp.sjtu.edu.cn | 上海交通大学网络中心NTP服务器地址 | 30   |
 |               |                 |                                   |      |
 
-
+```cmd
+w32tm /stripchart /computer:ntp_server_address
+```
 
 
 
