@@ -94,10 +94,17 @@ Timezone:   Asia/Shanghai
 | IP            |                 |                                   | time |
 | ------------- | --------------- | --------------------------------- | ---- |
 | 202.120.2.101 | ntp.sjtu.edu.cn | 上海交通大学网络中心NTP服务器地址 | 30   |
-|               |                 |                                   |      |
+| 101.6.6.172   |  ntp.tuna.tsinghua.edu.cn               |    TUNA NTP                               |      |
 
 ```cmd
-w32tm /stripchart /computer:ntp_server_address
+
+w32tm /stripchart /computer:time.windows.com
+w32tm /stripchart /computer:ntp.sjtu.edu.cn
+```
+
+```bash
+ntpdate -q pool.ntp.org
+ntpdate -q time.windows.com
 ```
 
 
