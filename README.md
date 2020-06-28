@@ -1,4 +1,14 @@
-# init
+# [Welcome to the world of technology](https://git.io/JfN8g)
+
+
+https://git.io/JfN8y
+
+### short url
+```bash
+gisturl="Jf5h1"
+```
+
+# windows init
 ```cmd
 choco install -y 7zip vim nextcloud-client typora
 ```
@@ -10,14 +20,8 @@ slmgr.vbs /dlv
 ```cmd
 wmic os get caption
 ```
-## [Welcome to the world of technology](https://git.io/JfN8g)
 
-https://git.io/JfN8y
 
-### short url
-```bash
-gisturl="Jf5h1"
-```
 
 ### bash shell init
 
@@ -72,6 +76,7 @@ curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 ## vagrant 
 
 ```powershell
+vagrant init generic/debian10
 # 安装VBoxGuestAdditions
 vagrant plugin install vagrant-vbguest
 
@@ -93,7 +98,7 @@ end
 
 
 
-# DNS
+## DNS
 
 | 国家 |                   | IPv4           | time (ms) |      |
 | ---- | ----------------- | -------------- | --------- | ---- |
@@ -116,10 +121,10 @@ end
 
 Timezone:   Asia/Shanghai
 
-| IP            |                 |                                   | time |
-| ------------- | --------------- | --------------------------------- | ---- |
-| 202.120.2.101 | ntp.sjtu.edu.cn | 上海交通大学网络中心NTP服务器地址 | 30   |
-| 101.6.6.172   |  ntp.tuna.tsinghua.edu.cn               |    TUNA NTP                               |      |
+| IP            |                          |                                   | time |
+| ------------- | ------------------------ | --------------------------------- | ---- |
+| 202.120.2.101 | ntp.sjtu.edu.cn          | 上海交通大学网络中心NTP服务器地址 | 30   |
+| 101.6.6.172   | ntp.tuna.tsinghua.edu.cn | TUNA NTP                          |      |
 
 ```cmd
 
