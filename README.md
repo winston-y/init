@@ -68,6 +68,31 @@ Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseB
 
 curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 
+
+## vagrant 
+
+```powershell
+# 安装VBoxGuestAdditions
+vagrant plugin install vagrant-vbguest
+
+# Install proxyconf:
+vagrant plugin install vagrant-proxyconf
+```
+
+#### vagrantfile
+```ruby
+Vagrant.configure("2") do |config|
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    config.proxy.http     = "http://192.168.0.2:3128/"
+    config.proxy.https    = "http://192.168.0.2:3128/"
+    config.proxy.no_proxy = "localhost,127.0.0.1,.example.com"
+  end
+  # ... other stuff
+end
+```
+
+
+
 # DNS
 
 | 国家 |                   | IPv4           | time (ms) |      |
