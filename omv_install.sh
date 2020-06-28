@@ -2,6 +2,9 @@
 # must debian 10
 
 
+echo "are you set the apt proxy ?"
+pause
+
 # ------- ------- ------- 
 # Install the openmediavault keyring manually:
 
