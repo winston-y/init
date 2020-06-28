@@ -25,10 +25,20 @@ wmic os get caption
 ## proxy
 
 ```powershell
+$Env:http_proxy="http://127.0.0.1:7890";$Env:https_proxy="http://127.0.0.1:7890"
+
 $Env:http_proxy="http://192.168.1.1:7890";$Env:https_proxy="http://192.168.1.1:7890"
+
+$Env:http_proxy="http://192.168.1.1:7890";$Env:https_proxy="http://192.168.1.1:7890"
+
+
 ```
 
 ```cmd
+set http_proxy=http://127.0.0.1:7890 & set https_proxy=http://127.0.0.1:7890
+
+set http_proxy=http://192.168.1.1:7890 & set https_proxy=http://192.168.1.1:7890
+
 set http_proxy=http://127.0.0.1:7890 & set https_proxy=http://127.0.0.1:7890
 ```
 
