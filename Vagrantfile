@@ -10,11 +10,21 @@ Vagrant.configure("2") do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
+  # Install proxyconf:
+  # vagrant plugin install vagrant-proxyconf
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    # config.proxy.http     = "http://192.168.1.1:7890/"
+    # config.proxy.https    = "http://192.168.1.1:7890/"
+    config.proxy.http     = "http://127.0.0.1:7890/"
+    config.proxy.https    = "http://127.0.0.1:7890/"
+    config.proxy.no_proxy = "localhost,127.0.0.1,.example.com"
+  end
+
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "generic/debian10"
+  # config.vm.box = "generic/debian10"
   # config.vm.box = "generic/ubuntu1804"          # Ubuntu 18.04 (aka Bionic Beaver)
-  # config.vm.box = "generic/ubuntu2004"          # Ubuntu 20.04 (aka Focal Fossa)
+  config.vm.box = "generic/ubuntu2004"          # Ubuntu 20.04 (aka Focal Fossa)
 
 
   # Disable automatic box update checking. If you disable this, then
@@ -40,7 +50,9 @@ Vagrant.configure("2") do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
+
   config.vm.network "public_network", bridge: "Realtek PCIe GbE Family Controller"
+  # config.vm.network "public_network", bridge: "Realtek PCIe GbE Family Controller"  
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -57,7 +69,7 @@ Vagrant.configure("2") do |config|
     vb.gui = false
   
     # Customize the amount of memory on the VM:
-    vb.memory = "1024"
+    vb.memory = "2048"
   end
   #
   # View the documentation for the provider you are using for more
